@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Camp Mangment System</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h3>ادارة المخيمات والمستفيدين</h3>
+        <button class="logout-btn">تسجيل الخروج</button>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="containar-style">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <a href="#">الرئيسية</a>
+            <a href="/CampsMangment.html">ادراة المخيمات</a>
+            <a href="/projectMangment.html">ادارة المشاريع</a>
+            <a href="/beneficiaryMangment.html">ادارة المستفيدين</a>
+        </div>
+        <div class="w-100">
+            <div class="custom-header">
+                <h2>اضافة مستفيد جديد</h2>
+            </div>
+            <section class="w-100 card">
+                <form style="padding: 30px;">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label">الاسم كاملا </label>
+                            <input type="text" id="FULL_NAME" class="form-control" placeholder="الاسم كاملا">
+                        </div>
+                        <div class="col-4">
+                            <label for="ID_NUMBER" class="form-label">رقم الهوية</label>
+                            <input type="ID_NUMBER" class="form-control" id="ID_NUMBER" placeholder="name@example.com">
+                        </div>
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label">الجنس </label>
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">ذكر</option>
+                                <option value="2">انثى</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label label-custom-style">تاريخ الميلاد </label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <div class="col-4">
+                            <label for="ID_NUMBER" class="form-label label-custom-style">رقم الجوال</label>
+                            <input type="PHPNE_NUMBER" class="form-control" id="PHPNE_NUMBER">
+                        </div>
+                        <div class="col-4">
+                            <label for="EMAIL" class="form-label label-custom-style">البريد الإلكتروني (اختياري)
+                            </label>
+                            <input type="text" id="EMAIL" class="form-control" placeholder="البريد الالكتروني">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label">المخيم </label>
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">مخيم 1</option>
+                                <option value="2">مخيم 2</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label for="ADDRESS" class="form-label">العنوان بالتفصيل</label>
+                            <input type="ADDRESS" class="form-control" id="ADDRESS" placeholder="name@example.com">
+                        </div>
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label">الحالة الاجتماعية </label>
+                            <select class="form-control" aria-label="Default select example">
+                                <option value="1">متزوج</option>
+                                <option value="2">ارمل</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="FULL_NAME" class="form-label label-custom-style"> حالة المستفيد </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">نشظ</option>
+                                <option value="2">غير نشط</option>
+                            </select>
+                        </div>
+                        <div class="col-8">
+                            <label for="ID_NUMBER" class="form-label label-custom-style">ملاحظات </label>
+                            <textarea id="notes" class="form-control" placeholder="أضف ملاحظات (اختياري)"
+                                rows="4"></textarea>
+
+                        </div>
+
+                    </div>
+                    <button class="btn btn-success mt-3">اضافة</button>
+                </form>
+
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+</html>

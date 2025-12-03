@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Camp Mangment System</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <h3>ادارة المشاريع</h3>
+    <button class="logout-btn">تسجيل الخروج</button>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="containar-style">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <a href="#">الرئيسية</a>
+      <a href="/CampsMangment.html">ادراة المخيمات</a>
+      <a href="/projectMangment.html">ادارة المشاريع</a>
+      <a href="/beneficiaryMangment.html">ادارة المستفيدين</a>
+    </div>
+    <div class="w-100">
+      <div class="custom-header">
+        <h2>ادارة المشاريع </h2>
+        <a href="/addPrpject.html" class="header-btn">+ اضافة مشروع جديد </a>
+      </div>
+
+      <section class="w-100">
+        <div class="row">
+          <div class="col-3 card camp-card-style">
+            <p class="">عدد المشاريع القائمة</p>
+            <p id="kpi-camps" class="">0</p>
+          </div>
+          <div class="col-3 card camp-card-style">
+            <p>عدد المشاريع الكلية</p>
+            <p id="kpi-camps" class="">30</p>
+          </div>
+        </div>
+        <div class="row card camp-card-style">
+          <table class="min-w-full text-sm">
+              <thead class="text-slate-500 uppercase text-xs">
+                <tr>
+                  <th class="p-3">اسم المشروع</th>
+                  <th class="p-3">تاريخ بداية المشروع</th>
+                  <th class="p-3">تاريخ نهاية المشروع </th>
+                  <th class="p-3">عدد الأفراد</th>
+                  <th class="p-3">حالات مستعجلة</th>
+                  <th class="p-3">آخر تحديث</th>
+                  <th class="p-3">إجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="campsTableBody" class="text-slate-700">
+                <!-- rows injected by JS -->
+              </tbody>
+            </table>
+
+        </div>
+    </div>
+    </section>
+
+
+  </div>
+
+  </div>
+
+</html>

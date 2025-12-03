@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');   
+
+*{
+  margin:0;
+  padding: 0;
+    box-sizing: border-box;
+        
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f1f5f9;
+}
+
+/* Header */
+.header {
+    background: #1e293b;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.card {
+     background: white; border-radius: 12px;
+     box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+     }
+.containar-style{
+    display: flex;
+    height: fit-content;
+}
+
+.logout-btn {
+    padding: 8px 18px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Layout wrapper */
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.05);
+    height: 100vh;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .3  ease-in-out;
+}
+
+.sidebar a:hover {
+    background: #e2e8f0;
+}
+.sidebar a{
+    font-size: 18;
+    font-weight: bold;
+}
+.containar-style h2{
+    padding: 20px;
+}
+.custom-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containar-style a{
+    text-decoration: none;
+    padding: 20px;
+    transition: all .3 ease-in-out;
+
+}
+.containar-style a:hover{
+    color: #000000;
+}
+.camp-card-style{
+    padding: 20px;
+    margin:22px
+}
+.camp-card-style{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-btn{
+    background-color: #21991d;
+    color: white;
+    border-radius: 18px;
+    margin: 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.label-custom-style{
+    font-size: 16px;
+    font-weight: 700;
+}

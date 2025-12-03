@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Camp Mangment System</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <h3>ادارة المخيمات والمستفيدين</h3>
+    <button class="logout-btn">تسجيل الخروج</button>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="containar-style">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <a href="#">الرئيسية</a>
+      <a href="/CampsMangment.html">ادراة المخيمات</a>
+      <a href="/projectMangment.html">ادارة المشاريع</a>
+      <a href="/beneficiaryMangment.html">ادارة المستفيدين</a>
+    </div>
+    <div class="w-100">
+      <div class="custom-header">
+        <h2>ادارة المستفيدين</h2>
+        <a href="/addBenficiary.html" class="header-btn">+ اضافة مستفيد جديد </a>
+      </div>
+
+      <section class="w-100">
+        <div class="row">
+          <div class="col-3 card camp-card-style">
+            <p class="">عدد المستفيدين الملي</p>
+            <p id="kpi-camps" class="">0</p>
+          </div>
+          <div class="col-3 card camp-card-style">
+            <p>عدد الأسر الكلي</p>
+            <p id="kpi-camps" class="">30</p>
+          </div>
+          <div class="col-3 card camp-card-style">
+            <p class="">لحالات المستعجلة </p>
+            <p id="kpi-camps" class="">22</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 card camp-card-style">
+            <p class=""> على مخيم من حيث الأسر</p>
+            <p id="kpi-camps" class="">0</p>
+          </div>
+          <div class="col-3 card camp-card-style">
+            <p>قل مخيم من حيث الأسر </p>
+            <p id="kpi-camps" class="">30</p>
+          </div>
+        </div>
+        <div class="row card camp-card-style">
+          <table class="">
+              <thead class="">
+                <tr>
+                  <th >المخيم</th>
+                  <th >المحافظة</th>
+                  <th >عدد الأسر</th>
+                  <th >عدد الأفراد</th>
+                  <th >حالات مستعجلة</th>
+                  <th >آخر تحديث</th>
+                  <th >إجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="campsTableBody" class="text-slate-700">
+                <!-- rows injected by JS -->
+              </tbody>
+            </table>
+
+        </div>
+    </div>
+    </section>
+
+
+  </div>
+
+  </div>
+
+</html>
