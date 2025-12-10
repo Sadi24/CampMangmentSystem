@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Camp Mangment System</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <h3>ادارة المشاريع</h3>
+    <button class="logout-btn">تسجيل الخروج</button>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="containar-style">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <a href="#">الرئيسية</a>
+      <a href="/CampsMangment.html">ادراة المخيمات</a>
+      <a href="/projectMangment.html">ادارة المشاريع</a>
+      <a href="/beneficiaryMangment.html">ادارة المستفيدين</a>
+    </div>
+    <div class="w-100">
+      <div class="custom-header">
+        <h2>لوحة الفلاتر<h2>
+            <div>
+              <button id="resetBtn" class="btn btn-outline-secondary">إعادة تعيين</button>
+              <button id="exportBtn" class="btn btn-primary">تصدير CSV</button>
+            </div>
+      </div>
+
+      <section class="w-100">
+
+        <div class="row card camp-card-style">
+
+          <div class="row g-3 mb-4">
+            <div class="col-12 col-lg-4">
+              <h5 class="mb-3">عناصر الفلترة</h5>
+              <div class="mb-2">
+                <label class="form-label">بحث نصي</label>
+                <input id="q" class="form-control" placeholder="ابحث بالاسم أو الوصف...">
+              </div>
+
+              <div class="mb-2">
+                <label class="form-label">التصنيف</label>
+                <select id="category" class="form-select">
+                  <option value="">الكل</option>
+                  <option value="A">التصنيف A</option>
+                  <option value="B">التصنيف B</option>
+                  <option value="C">التصنيف C</option>
+                </select>
+              </div>
+
+              <div class="mb-2">
+                <label class="form-label d-block">الحالة</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="st1" value="active" checked>
+                  <label class="form-check-label" for="st1">فعال</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="st2" value="inactive" checked>
+                  <label class="form-check-label" for="st2">غير فعال</label>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">سعر (من - إلى)</label>
+                <div class="d-flex gap-2">
+                  <input id="minPrice" type="number" class="form-control" placeholder="من">
+                  <input id="maxPrice" type="number" class="form-control" placeholder="إلى">
+                </div>
+              </div>
+
+              <div class="mt-3 d-flex gap-2">
+                <button id="applyBtn" class="btn btn-success flex-grow-1">تطبيق الفلاتر</button>
+                <button id="clearBtn" class="btn btn-outline-danger">مسح</button>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <h5 class="mb-3">النتائج (<span id="count">0</span>)</h5>
+              <div class="table-responsive">
+                <table id="results" class="table table-striped table-bordered align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>#</th>
+                      <th>الاسم</th>
+                      <th>التصنيف</th>
+                      <th>الحالة</th>
+                      <th>تاريخ</th>
+                      <th>السعر</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+  </div>
+
+  </div>
+
+</html>
